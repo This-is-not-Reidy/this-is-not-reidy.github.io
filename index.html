@@ -22,19 +22,35 @@
     <title>Reidy</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark px-5">
-        <a class="navbar-brand" href="/">💔</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mt-lg-0">
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Мой Discord сервер</a>
-            </li> -->
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark px-2 px-sm-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">💔</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="https://discord.gg/JbufTTaTbE"
+                    target="_blank"
+                ><i class="fab fa-discord"></i> | Мой Discord сервер</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Хочу спать
+            </span>
+          </div>
         </div>
       </nav>
 
@@ -49,6 +65,17 @@
                 <div class="about-me my-4">
                     <div class="about-me__text text-white">
                         <p>Мэх... Хз, лень что-то рассказывать</p>
+                        <div class="my-discord my-5">
+                            <img src="assets/images/nezuko_in_box.png" alt="Nezuko" onclick="document.getElementById('nezuko-chan').play();">
+                            <audio id="nezuko-chan" src="assets/sounds/nezuko_chan.mp3"></audio>
+                            <button
+                                type="button"
+                                class="btn btn-primary d-block mx-auto"
+                                data-mdb-ripple-color="dark"
+                            >
+                            <i class="fab fa-discord"></i> | Мой Discord сервер
+                          </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -569,11 +596,10 @@
             </div>
         </div>
     </main>
-    <!--Bootstrap JS-->
+    <!-- MDB -->
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    >
-    </script>
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
+    ></script>
 </body>
 </html>
